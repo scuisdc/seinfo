@@ -8,8 +8,8 @@ class Api::RegistrationsController < Devise::RegistrationsController
   #   @apiParam {String} name Users name
   #   @apiParam {String} password Users registrate password
   #   @apiParam {String} password_confirmation Confirmation of password
-  #   @apiParam {String} classnumber The number of class
-  #   @apiParam {String} grade The grade which student in
+  #   @apiParam {String} [classnumber=1] The number of class
+  #   @apiParam {String} [grade=Time.now.year] The grade which student in
   #
   #   @apiParamExample {json} Request-Example:
   #   {
@@ -26,11 +26,11 @@ class Api::RegistrationsController < Devise::RegistrationsController
   #   @apiSuccess {Number} id Users unique ID
   #   @apiSuccess {String} email Users registrated email
   #   @apiSuccess {String} name Users name
-  #   @apiSuccess {Boolean} [active=true] Is user active
-  #   @apiSuccess {Boolean} [published=true] Is user published
+  #   @apiSuccess {Boolean} active Is user active
+  #   @apiSuccess {Boolean} published Is user published
   #   @apiSuccess {Datetime} published_at When user published
-  #   @apiSuccess {String} [classnumber=1] The number of class
-  #   @apiSuccess {Stirng} [grade=Time.now.year] The grade which student in
+  #   @apiSuccess {String} classnumber The number of class
+  #   @apiSuccess {Stirng} grade The grade which student in
   #   @apiSuccess {Number} age The age of user
   #   @apiSuccess {Datetime} created_at When user created
   #   @apiSuccess {Datetime} updated_at When user updated
