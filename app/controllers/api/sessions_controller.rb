@@ -1,0 +1,4 @@
+class Api::SessionsController < Devise::SessionsController
+  clear_respond_to
+  respond_to :json
+end
