@@ -29,10 +29,6 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-gem 'redis'
-gem 'hiredis'
-gem 'redis-namespace'
-gem 'redis-objects'
 gem 'devise'
 gem 'mysql2'
 
